@@ -9,7 +9,7 @@ namespace MailerNet.Models
 {
     public class Mailer
     {
-        static void Main(string[] args)
+        public void sendEmail()
         {
             Email email = new Email(EmailContentType.Html)
             {
@@ -18,8 +18,9 @@ namespace MailerNet.Models
             email.AddTo("alexradevitunes@gmail.com", "Alex");
             email.Subject = "Video is sent";
             email.Template = "template";
-            email.AddTemplateVar("person", "teste");
-            email.AddTemplateVar("number", "123");
+            email.Message = "Hello World";
+            //email.AddTemplateVar("person", "teste");
+            //email.AddTemplateVar("number", "123");
             email.Send();
         }
     }
