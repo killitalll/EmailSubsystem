@@ -6,11 +6,11 @@ The basic function of this app is to automatically send an email to a specific r
 
 ## How it works:
 
-**Package Installation**
+**Package Installation:**
 
 Install the Mailer.Net package.
 
-**ConfigSection**
+**ConfigSection:**
 
  This set of code is added to the web.config file in the MVC application. it is added directly under <configuration>.
 
@@ -19,7 +19,7 @@ Install the Mailer.Net package.
     <section name="mailernet" type="Mailer.NET.Mailer.Internal.ConfigFile.MailerNetSection, Mailer.NET, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" requirePermission="false" />
   </configSections>
 ```
-**Mailer Configuration**
+**Mailer Configuration:**
 
 This is the code in the web.config file that configures the mailer to use smtp.
 
@@ -37,7 +37,7 @@ This is the code in the web.config file that configures the mailer to use smtp.
   </mailernet> 
 ```
 
-**Class Setup**
+**Class Setup:**
 
 There is a Mailer class that implements this code that allows it to send a given message to a specified user. Currently it is not using the singleton pattern.
 
@@ -55,7 +55,7 @@ email.Message = "Hello World";
 email.Send();
 ```
 
-**Controller Setup**
+**Controller Setup:**
 
 The code in the mailer class is executed from this controller using this simple code.
 
@@ -65,7 +65,7 @@ mail.sendEmail();
 return View();
 ```
 
-**Extras**
+**Extras:**
 
 When we implement further down the line we will be adding custom templates for the different emails that will be send out. The Mailer.Net package does support this feature.
 
