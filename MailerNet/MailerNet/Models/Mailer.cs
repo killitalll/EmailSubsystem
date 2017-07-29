@@ -17,7 +17,7 @@ namespace MailerNet.Models
             };
             email.AddTo("alexradevitunes@gmail.com", "Alex");
             email.Subject = "Video is sent";
-            email.Template = "template";
+            //email.Template = "template";
             email.Message = "Hello World";
             //email.AddTemplateVar("person", "teste");
             //email.AddTemplateVar("number", "123");
