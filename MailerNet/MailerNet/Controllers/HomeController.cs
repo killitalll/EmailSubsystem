@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using MailerNet;
 
 namespace MailerNet.Controllers
 {
@@ -15,8 +16,6 @@ namespace MailerNet.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
