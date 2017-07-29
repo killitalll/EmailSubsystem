@@ -13,7 +13,7 @@ namespace MailerNet.Models
         {
             Email email = new Email(EmailContentType.Html)
             {
-                From = new Contact() { Name = "Alex", Email = "emailsubsystem@gmail.com" }
+                From = new Contact() { Name = "Alex", Email = "emailsubsystemtest@gmail.com" }
             };
             email.AddTo("alexradevitunes@gmail.com", "Alex");
             email.Subject = "Video is sent";
